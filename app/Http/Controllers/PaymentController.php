@@ -8,7 +8,7 @@ use App\Order\OrderSetting;
 class PaymentController extends Controller
 {
     public function store( OrderSetting $orderSetting , OrderInterface $BankPaymentInterface ){
-
+        dd(app());
         $orderSetting->setDiscountInfo(50);
         dd($BankPaymentInterface->orderInfo(2500));
 

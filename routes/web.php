@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+   return view('welcome');
+});
 
-Route::get('/', 'PaymentController@store');
+//Route::get('/', 'PaymentController@store');
 
 Auth::routes();
 
